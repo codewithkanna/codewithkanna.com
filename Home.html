@@ -1,0 +1,236 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"/>
+<title> Suresh website | code with kanna </title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap" rel="stylesheet">
+
+<script type="text/javascript">
+  var courses=new Array();
+  var ccount=0;
+function enrollme(course)
+{
+
+  
+  courses[ccount]=course;
+  ccount++;
+  
+  var clist="";
+  for (var i=0; i<courses.length;i++)
+      clist=clist+"\n"+courses[i]
+     
+  var message="Congratulations!\nYou are successfully enrolled in the following courses\n\n"+clist;
+   alert(message);
+}
+
+function check()
+{
+	try{
+	var urlstring=window.location.search;
+	
+	var checkstr=urlstring.substring(1);
+	var splitarray=checkstr.split('&',2);
+	
+	var uname=splitarray[0].substring(splitarray[0].indexOf('=')+1);
+	var pwd=splitarray[1].substring(splitarray[1].indexOf('=')+1);
+	
+ if(uname=='codewithkanna' && pwd=='suresh12')
+ {
+	alert("Dear Member, Welcome to Course Enrollment page");
+ }
+ else
+ {
+	alert("You must login properly to access this page");
+	window.location.href="login.html";
+ }
+ }
+	catch(err)
+	{
+	alert("You must login properly to access this page");
+	window.location.href="login.html";
+	}
+}
+
+</script>
+</head>
+<body onload="check()">
+<div class="topheader">
+<div class="left">sureshjayana@gmail.com</div>
+<div class="right">insta id:Code with kanna</div>
+</div>
+
+<div class="header">
+<div class="row">
+<div class="hpart1"><img src="balaji.jpg"></div>
+<div class="hpart2"> Code With Kanna </div>
+<div class="hpart3"><a href="index.html" class="login">LOGOUT</a></div>
+
+</div>
+</div>
+
+<div class="menubar">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#aboutus">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#success">Success Milestones</a></li>
+</ul>
+</div>
+
+<div class="bodypart">
+<br/>
+<h1 class="sectitle" id="courses">Courses Avilable</h1>
+
+<br/>
+
+<div class="courses">
+<div class="coursediv">
+<img src="c1.png"/>
+<br/><br/> 
+<a href="#">programming basics</a><br<br/>
+<button class="enroll" onclick="enrollme('programming basics')">Enroll</button>
+</div>
+
+<div class="coursediv">
+<img src="c2.png"/>
+<br/><br/> 
+<a href="#">C programming</a>
+<button class="enroll" onclick="enrollme('C Programming')">Enroll</button>
+
+</div>
+
+<div class="coursediv">
+<img src="c3.png"/>
+<br/><br/> 
+<a href="#">CSS course</a>
+<button class="enroll" onclick="enrollme('CSS Course')">Enroll</button>
+
+</div>
+
+<div class="coursediv">
+<img src="c4.png"/>
+<br/><br/> 
+<a href="#">HTML course</a>
+<button class="enroll"onclick="enrollme('HTML Course')">Enroll</button>
+
+</div>
+
+<div class="coursediv">
+<img src="c5.png"/>
+<br/><br/> 
+<a href="#">JAVA SCRIPT </a>
+<button class="enroll" onclick="enrollme('Java Script')">Enroll</button>
+
+</div>
+
+<div class="coursediv">
+<img src="c6.png"/>
+<br/><br/> 
+<a href="#">PowerBI course</a>
+<button class="enroll" onclick="enrollme('Power BI Course')">Enroll</button>
+
+</div>
+
+<div class="coursediv">
+<img src="c7.png"/>
+<br/><br/> 
+<a href="#">Python course</a>
+<button class="enroll" onclick="enrollme('Python COurse')">Enroll</button>
+
+</div>
+
+<div class="coursediv">
+<img src="c8.png"/>
+<br/><br/> 
+<a href="#">SQL Server </a>
+<button class="enroll" onclick="enrollme('SQL Server')">Enroll</button>
+
+</div>
+
+</div>
+
+</div>
+<br/>
+<hr/>
+<br/>
+<h1 class="sectitle" id="success">Success Milestone</h1>
+<br/>
+
+<div class="success">
+<marquee>
+<img src="j1.jpg">
+<img src="j2.jpg">
+<img src="j3.jpg">
+<img src="j4.jpg">
+<img src="j5.jpg">
+<img src="j6.jpg">
+<img src="j7.jpg">
+<img src="j8.jpg">
+<img src="j9.jpg">
+
+
+</marquee>
+
+</div>
+
+
+
+<br/><br/>
+<br/>
+<hr/>
+<br/>
+<h1 class="sectitle" id="aboutus">About Us</h1>
+<br/>
+<div class="about">
+
+  This channels will help you learn programming languages easily in Telugu
+  <br/>
+  For any Queries you can reach me by using following
+  <br/>
+  email:Sureshjayana@gmail.com
+  <br/>
+  instagram:Suresh1007
+  <br/>
+  Telegram Personal:suresh
+
+</div>
+
+<br/><br/>
+</div>
+
+<div class="footer">
+<div class="part20">
+<h2>Youtube Channel Links</h2>
+</br>
+<a href="#">Programming Basics</a><br/>
+<a href="#">C Language</a><br/>
+<a href="#">Python</a><br/>
+<a href="#">HTML</a><br/>
+<a href="#">Sql Server</a><br/>
+</div>
+
+<div class="part20">
+<h2>Social Media Links</h2>
+</br>
+<a href="#">Gmail</a><br/>
+<a href="#">Instagram</a><br/>
+<a href="#">Facebook</a><br/>
+</div>
+
+<div class="part40">
+<h2>Submit Your Request Here</h2>
+</br>
+<form>
+Email :<br/>
+<input type="email" class="footerform"><br/>
+Request :<br/>
+<textarea rows="10" cols="44"></textarea></br>
+<input type="submit" class="footerform btn" value="submit">
+
+</form>
+</div>
+</div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"/>
+<title> Suresh website | code with kanna </title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap" rel="stylesheet">
+
+<script type="text/javascript">
+function check()
+{
+ var uname=document.getElementById("uname").value;
+ var pwd=document.getElementById("pwd").value;
+ 
+ if(uname=='codewithkanna' && pwd=='suresh12')
+ {
+	document.getElementById("form1").action="home.html";
+ }
+ else
+ {
+  document.getElementById("err").innerHTML="username or password is incorrect";
+ return false;
+ }
+}
+
+</script>
+</head>
+<body>
+<div class="topheader">
+<div class="left">sureshjayana@gmail.com</div>
+<div class="right">insta id:Code with kanna</div>
+</div>
+
+<div class="header">
+<div class="row">
+<div class="hpart1"><img src="balaji.jpg"></div>
+<div class="hpart2"> Code With Kanna </div>
+<div class="hpart3"><a href="login.html" class="login">LOGIN</a></div>
+
+</div>
+</div>
+
+<div class="menubar">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#aboutus">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#success">Success Milestones</a></li>
+</ul>
+</div>
+
+<div class="bodypart">
+<br/>
+<h1 class="sectitle">Login Form</h1><br/><br/>
+
+ <form id="form1" name="form1" class="loginform" onsubmit="return check()">
+username: <input type:"text" id="uname" name="uname" value=""/><br/><br/>
+Password: <input type:"password" id="pwd" name="pwd" value=""/><br/><br/>
+<input type="submit" value="Login"/>
+ 
+ </form>
+
+
+<br/><br/>
+<div id="err" style="color:red;text-align:center;margin-bottom:40px;">
+</div>
+</div>
+
+<div class="footer">
+<div class="part20">
+<h2>Youtube Channel Links</h2>
+</br>
+<a href="#">Programming Basics</a><br/>
+<a href="#">C Language</a><br/>
+<a href="#">Python</a><br/>
+<a href="#">HTML</a><br/>
+<a href="#">Sql Server</a><br/>
+</div>
+
+<div class="part20">
+<h2>Social Media Links</h2>
+</br>
+<a href="#">Gmail</a><br/>
+<a href="#">Instagram</a><br/>
+<a href="#">Facebook</a><br/>
+</div>
+
+<div class="part40">
+<h2>Submit Your Request Here</h2>
+</br>
+<form>
+Email :<br/>
+<input type="email" class="footerform"><br/>
+Request :<br/>
+<textarea rows="10" cols="44"></textarea></br>
+<input type="submit" class="footerform btn" value="submit">
+
+</form>
+</div>
+</div>
+
+</body>
+
+
+</html>

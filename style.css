@@ -1,0 +1,224 @@
+*{
+margin:0px;
+padding:0px;	
+font-family: 'Noto Serif Display', serif;
+font-weight:bold;
+}
+body
+{
+
+}
+
+.topheader{
+	height:35px;
+	background-color:grey;
+	font-size:19px;
+	color:white;
+	padding:8px
+}
+
+.header{
+	height:130px;
+	font-size:22px;
+}
+
+.row
+{
+	width:auto;
+	padding:10px;
+	padding-top:25px;
+}
+.header img
+{
+	width:50px;
+	height:50px;
+}
+.menubar{
+	height:40px;
+	background-color:lightgrey;
+	font-size:22px;
+}
+
+.bodypart{
+	height:auto;
+	font-size:22px;
+	overflow:hidden;
+}
+	
+
+	
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.hpart1{
+width:4%;
+float:left;
+}
+
+.hpart2{
+width:50%;
+float:left;
+font-size:45px;
+color:green"
+}
+
+.login{
+	text-decoration:none;
+	color:white;
+}
+
+.hpart3{
+width:10%;
+float:right;
+background-color:green;
+text-align:center;
+padding:10px;
+margin-right:55px;
+border-radius:10px;
+}
+
+.hpart3:hover
+{
+background-color:red;
+}
+
+.menubar  ul{
+width:100%;
+list-style-type:none;
+}
+
+.menubar ul li{
+float:left;
+}
+
+.menubar ul li a{
+ dispaly:block;
+ text-decoration:none;
+ color:black;
+ font-size:17px;
+ padding:10px;
+ font-weight:bold;
+ font-family:'Arial';
+ padding-right:50px;
+  padding-left:50px;
+}
+
+.menubar ul li a:hover{
+	background-color:red;
+	color:yellow;
+}
+
+.sectitle
+{
+	text-align:center;
+	color:red;
+
+}
+
+.courses{
+	width:80%;
+	margin:0 auto auto;
+}
+
+.coursediv{
+width:20%;
+border:1px solid lightgrey;
+box-shadow:3px 6px red;
+height:290px;
+border-radius:10px;
+float:left;
+margin:3% 2%;
+text-align:center;
+}
+
+.coursediv img{
+width:100%;
+border-radius:10px; 
+margin-top:5px;
+}
+
+.coursediv a{
+text-decoration:none;
+font-size:27px;
+color:black;
+padding:20px;
+}
+
+.success img{
+width:300px;
+height:300px;
+margin-right:50px;
+}
+
+.about{
+width:80%;
+margin:0 auto auto;
+text-align:center;
+}
+
+.footer{
+	height:400px;
+	width:100%;
+	background-color:black;
+	color:yellow;
+	padding:30px;
+	}
+
+.part20{
+width:20%;
+float:left;
+margin-right:90px;
+}
+
+.footerform{
+width:370px;
+}
+
+.btn{
+background-color:grey;
+color:white;
+}
+
+.part20 a{
+text-decoration:none;
+color:white;
+}
+
+.part40{
+width:40%;
+float:left;
+}
+
+.loginform{
+width:16%;
+margin:0 auto auto;
+text-align:center; 
+margin-bottom:150px;
+}
+
+.enroll{
+background-color:green;
+color:white;
+text-align:center;
+margin-top:10px;
+width:130px;
+padding:3px;
+border-radius:10px;
+}
+
+.enroll:hover{
+background-color:indigo;
+}
+
+.note{
+background-color:yellow;
+color:red;
+text-align:center;
+border:1px dashed red;
+padding:10px;
+}
